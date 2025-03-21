@@ -1,4 +1,5 @@
 import './App.css';
+import NewExpense from './component/NewEpense';
 import Expenses from './Expenses';
 const expenses = [
   {
@@ -27,7 +28,8 @@ const expenses = [
 function App() {
   return (
     <div className="App">
-    <Expenses expense={expenses}/>
+      <NewExpense />
+      <Expenses expense={expenses} />
     </div>
   );
 }
